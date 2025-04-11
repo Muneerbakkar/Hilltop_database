@@ -58,7 +58,8 @@ app.post("/enquiry", async (req, res) => {
   try {
     // Send customer's email to the company's email address
     const mailOptions = {
-      to: "muneerbakkar735@gmail.com", // Replace with the company's email address
+      to: "njhilltop@gmail.com",
+      // to: "muneerbakkar735@gmail.com", // Replace with the company's email address
       subject: "New Enquiry Received",
       text: `You have received a new enquiry from: ${email}`,
     };
@@ -86,8 +87,8 @@ app.post("/send-email", async (req, res) => {
   const { subject, text } = req.body;
 
   const mailOptions = {
-    // to: "njhilltop@gmail.com", // Replace with recipient's email
-    to: "muneerbakkar735@gmail.com", // Replace with recipient's email
+    to: "njhilltop@gmail.com", // Replace with recipient's email
+    // to: "muneerbakkar735@gmail.com", // Replace with recipient's email
     subject: subject,
     text: text,
   };
@@ -113,8 +114,8 @@ app.post("/subscribe", async (req, res) => {
   try {
     // Send customer's email to the company's email address
     const mailOptions = {
-      // to: "njhilltop@gmail.com", // Replace with the company's email address
-      to: "muneerbakkar735@gmail.com", // Replace with the company's email address
+      to: "njhilltop@gmail.com", // Replace with the company's email address
+      // to: "muneerbakkar735@gmail.com", // Replace with the company's email address
       subject: "New Newsletter Subscription",
       text: `You have a new subscriber: ${email}`,
     };
